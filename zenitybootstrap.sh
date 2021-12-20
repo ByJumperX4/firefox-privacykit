@@ -32,8 +32,8 @@ wget https://mirrors.slackware.com/slackware/slackware$SLACKARCH-13.37/slackware
 # Step 2: decompress everything
 tar xvf rpm2tgz*.txz
 tar xvf rpm-*.txz
-PATH=$CURR_DIR/zenity/usr/bin:$PATH $CURR_DIR/zenity/usr/bin/rpm2targz $CURR_DIR/zenity/libnotify*.rpm
-PATH=$CURR_DIR/zenity/usr/bin:$PATH $CURR_DIR/zenity/usr/bin/rpm2targz $CURR_DIR/zenity/zenity*.rpm
+PATH=$CURR_DIR/zenity/usr/bin:$PATH LD_PRELOAD=$CURR_DIR/zenity/usr/lib$SLACKARCH/librpm.so.1.0.0 $CURR_DIR/zenity/usr/bin/rpm2targz $CURR_DIR/zenity/libnotify*.rpm
+PATH=$CURR_DIR/zenity/usr/bin:$PATH LD_PRELOAD=$CURR_DIR/zenity/usr/lib$SLACKARCH/librpm.so.1.0.0 $CURR_DIR/zenity/usr/bin/rpm2targz $CURR_DIR/zenity/zenity*.rpm
 tar xvf libnotify*.tar.gz
 tar xvf zenity*.tar.gz
 
@@ -46,5 +46,5 @@ rm -rfv $CURR_DIR/zenity/libnotify* $CURR_DIR/zenity/zenity*
 # Step 4: create a script to use zenity
 echo "#!/bin/sh" > $CURR_DIR/runzenity
 echo "cd $CURR_DIR/zenity" >>  $CURR_DIR/runzenity
-echo "LD_PRELOAD=./usr/lib64/libnotify.so.1.2.3 ./usr/bin/zenity" \$\@ >>  $CURR_DIR/runzenity
+echo "LD_PRELOAD=./usr/lib$SLACKARCH/libnotify.so.1.2.3 ./usr/bin/zenity" \$\@ >>  $CURR_DIR/runzenity
 chmod +x $CURR_DIR/runzenity
