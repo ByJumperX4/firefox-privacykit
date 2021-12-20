@@ -17,7 +17,7 @@ else
     echo "Architecture not supported (yet)! Please create an issue with the output of uname -m"
 fi
 
-if [ -f $CURR_DIR/zenity ]; then
+if [ -d $CURR_DIR/zenity ]; then
     rm -rfv $CURR_DIR/zenity
 fi
 if [ -f $CURR_DIR/runzenity ]; then
@@ -27,9 +27,7 @@ fi
 # Step 1: create the zenity dir we will work in and download the 3 components we will use
 mkdir -v $CURR_DIR/zenity
 cd $CURR_DIR/zenity
-wget https://mirrors.slackware.com/slackware/slackware$SLACKARCH-13.37/slackware$SLACKARCH/a/rpm2tgz-1.2.2-$SLACKPKGARCH-1.txz
-wget https://vault.centos.org/6.10/os/$CENTOSARCH/Packages/libnotify-0.5.0-1.el6.$CENTOSARCH.rpm
-wget https://vault.centos.org/6.10/os/$CENTOSARCH/Packages/zenity-2.28.0-1.el6.$CENTOSARCH.rpm
+wget https://mirrors.slackware.com/slackware/slackware$SLACKARCH-13.37/slackware$SLACKARCH/a/rpm2tgz-1.2.2-$SLACKPKGARCH-1.txz https://vault.centos.org/6.10/os/$CENTOSARCH/Packages/libnotify-0.5.0-1.el6.$CENTOSARCH.rpm https://vault.centos.org/6.10/os/$CENTOSARCH/Packages/zenity-2.28.0-1.el6.$CENTOSARCH.rpm
 
 # Step 2: decompress everything
 tar xvf rpm2tgz*.txz
