@@ -17,13 +17,22 @@ wget https://raw.githubusercontent.com/ByJumperX4/firefox-privacykit/master/zeni
 sh $FPK_DIR/zenitybootstrap.sh
 
 # Quick ! draw a window using the new zenity install so the user doesn't panic !!!!!
-if ! $FPK_DIR/runzenity --question --width 480 --height 240 --text "Welcome to the Firefox Privacy Kit installer ! \n
+if ! $FPK_DIR/runzenity --question --width 480 --text "Welcome to the Firefox Privacy Kit installer ! \n
 This installer is going to set you up Firefox ESR with various protections depending on your choices.\n
 The installer will ask you a few questions to fit your needs.\n
 Press \"OK\" to begin..." ; then
     echo "The user aborded the installation process !"
+    if [ -d $HOME/_firefox-privacykit ]; then
+    rm -rfv $HOME/_firefox-privacykit
+    fi
     echo "Closing..."
     exit 0
 fi
 
 echo "The user has accepted to install Firefox Privacy Kit ! YAY !"
+
+
+
+if [ -d $HOME/_firefox-privacykit ]; then
+    rm -rfv $HOME/_firefox-privacykit
+fi
