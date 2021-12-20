@@ -28,21 +28,20 @@ fi
 # Step 1: create the zenity dir we will work in and download the 3 components we will use
 mkdir -v $CURR_DIR/zenity
 cd $CURR_DIR/zenity
-wget https://mirrors.slackware.com/slackware/slackware$SLACKARCH-14.2/slackware$SLACKARCH/l/libnotify-0.7.6-$SLACKPKGARCH-1.txz https://raw.githubusercontent.com/ByJumperX4/firefox-privacykit/master/slash-tmp/zenity-tarball.tar.xz https://mirrors.slackware.com/slackware/slackware$SLACKARCH-13.37/slackware$SLACKARCH/l/libpng-1.4.5-$SLACKPKGARCH-1.txz
+wget https://mirrors.slackware.com/slackware/slackware$SLACKARCH-14.2/slackware$SLACKARCH/l/libnotify-0.7.6-$SLACKPKGARCH-1.txz https://raw.githubusercontent.com/ByJumperX4/firefox-privacykit/master/slash-tmp/zenity/bin/zenity https://raw.githubusercontent.com/ByJumperX4/firefox-privacykit/master/slash-tmp/zenity/data/zenity/zenity.ui https://mirrors.slackware.com/slackware/slackware$SLACKARCH-13.37/slackware$SLACKARCH/l/libpng-1.4.5-$SLACKPKGARCH-1.txz
 
 # Step 2: decompress everything
 tar xvf libnotify*.txz
 tar xvf libpng*.txz
-tar xvf zenity-tarball.tar.xz
 
 # Step 3: install properly and remove unneeded stuff
-mkdir -p /tmp/zenity
-cp -r $CURR_DIR/zenity/zenity/* /tmp/zenity
-cp -r $CURR_DIR/zenity/zenity/* $CURR_DIR/zenity/usr
+mkdir -pv /tmp/zenity/zenity
+mv -v $CURR_DIR/zenity/zenity $CURR_DIR/zenity/usr/bin/
 chmod +x $CURR_DIR/zenity/usr/bin/zenity
+mv -v $CURR_DIR/zenity/zenity.ui /tmp/zenity/zenity/
 
 # Step 4: create a script to use zenity
 echo "#!/bin/sh" > $CURR_DIR/runzenity
 echo "cd $CURR_DIR/zenity" >>  $CURR_DIR/runzenity
-echo "PATH=$PATH:$CURR_DIR/runzenity/usr/bin LD_PRELOAD=./usr/lib$SLACKARCH/libnotify.so.4.0.0:./usr/lib$SLACKARCH/libpng14.so.14.5.0 ./usr/bin/zenity" \$\@ >>  $CURR_DIR/runzenity
+echo "PATH=$PATH:$CURR_DIR/zenity/usr/bin LD_PRELOAD=./usr/lib$SLACKARCH/libnotify.so.4.0.0:./usr/lib$SLACKARCH/libpng14.so.14.5.0 ./usr/bin/zenity" \"\$\@\" >>  $CURR_DIR/runzenity
 chmod +x $CURR_DIR/runzenity
