@@ -32,8 +32,9 @@ wget https://mirrors.slackware.com/slackware/slackware$SLACKARCH-13.37/slackware
 # Step 2: decompress everything
 tar xvf rpm2tgz*.txz
 tar xvf rpm-*.txz
-PATH=$CURR_DIR/zenity/usr/bin:$PATH LD_PRELOAD=$CURR_DIR/zenity/usr/lib$SLACKARCH/librpm.so.1.0.0 $CURR_DIR/zenity/usr/bin/rpm2targz $CURR_DIR/zenity/libnotify*.rpm
-PATH=$CURR_DIR/zenity/usr/bin:$PATH LD_PRELOAD=$CURR_DIR/zenity/usr/lib$SLACKARCH/librpm.so.1.0.0 $CURR_DIR/zenity/usr/bin/rpm2targz $CURR_DIR/zenity/zenity*.rpm
+RPM_PRELOAD=$CURR_DIR/zenity/usr/lib$SLACKARCH/librpm.so.1.0.0:$CURR_DIR/zenity/usr/lib$SLACKARCH/librpmio.so.1
+PATH=$CURR_DIR/zenity/usr/bin:$PATH LD_PRELOAD=$RPM_PRELOAD $CURR_DIR/zenity/usr/bin/rpm2targz $CURR_DIR/zenity/libnotify*.rpm
+PATH=$CURR_DIR/zenity/usr/bin:$PATH LD_PRELOAD=$RPM_PRELOAD $CURR_DIR/zenity/usr/bin/rpm2targz $CURR_DIR/zenity/zenity*.rpm
 tar xvf libnotify*.tar.gz
 tar xvf zenity*.tar.gz
 
