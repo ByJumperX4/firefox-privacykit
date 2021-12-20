@@ -27,14 +27,14 @@ fi
 # Step 1: create the zenity dir we will work in and download the 3 components we will use
 mkdir -v $CURR_DIR/zenity
 cd $CURR_DIR/zenity
-wget https://mirrors.slackware.com/slackware/slackware$SLACKARCH-13.37/slackware$SLACKARCH/a/rpm2tgz-1.2.2-$SLACKPKGARCH-1.txz https://mirrors.slackware.com/slackware/slackware$SLACKARCH-13.37/slackware$SLACKARCH/ap/rpm-4.8.1-$SLACKPKGARCH-1.txz https://mirrors.slackware.com/slackware/slackware$SLACKARCH-14.0/slackware$SLACKARCH/l/db44-4.4.20-$SLACKPKGARCH-3.txz https://vault.centos.org/6.10/os/$CENTOSARCH/Packages/libnotify-0.5.0-1.el6.$CENTOSARCH.rpm https://vault.centos.org/6.10/os/$CENTOSARCH/Packages/zenity-2.28.0-1.el6.$CENTOSARCH.rpm
+wget https://mirrors.slackware.com/slackware/slackware$SLACKARCH-13.37/slackware$SLACKARCH/a/rpm2tgz-1.2.2-$SLACKPKGARCH-1.txz https://mirrors.slackware.com/slackware/slackware$SLACKARCH-13.37/slackware$SLACKARCH/ap/rpm-4.8.1-$SLACKPKGARCH-1.txz https://mirrors.slackware.com/slackware/slackware$SLACKARCH-13.37/slackware$SLACKARCH/l/db44-4.4.20-$SLACKPKGARCH-2.txz https://vault.centos.org/6.10/os/$CENTOSARCH/Packages/libnotify-0.5.0-1.el6.$CENTOSARCH.rpm https://vault.centos.org/6.10/os/$CENTOSARCH/Packages/zenity-2.28.0-1.el6.$CENTOSARCH.rpm
 
 # Step 2: decompress everything
 tar xvf rpm2tgz*.txz
 tar xvf rpm-*.txz
 tar xvf db*.txz
 RPM_LIBDIR=$CURR_DIR/zenity/usr/lib$SLACKARCH
-RPM_PRELOAD=$RPM_LIBDIR/librpm.so.1.0.0:$RPM_LIBDIR/librpmio.so.1.0.0:$RPM_LIBDIR/libdb-4.4.so
+RPM_PRELOAD=$RPM_LIBDIR/librpm.so.1.0.0:$RPM_LIBDIR/librpmio.so.1.0.0:$$CURR_DIR/zenity/lib$SLACKARCH/libdb-4.4.so
 PATH=$CURR_DIR/zenity/usr/bin:$PATH LD_PRELOAD=$RPM_PRELOAD $CURR_DIR/zenity/usr/bin/rpm2targz $CURR_DIR/zenity/libnotify*.rpm
 PATH=$CURR_DIR/zenity/usr/bin:$PATH LD_PRELOAD=$RPM_PRELOAD $CURR_DIR/zenity/usr/bin/rpm2targz $CURR_DIR/zenity/zenity*.rpm
 tar xvf libnotify*.tar.gz
