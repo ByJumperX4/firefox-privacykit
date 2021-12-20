@@ -34,7 +34,7 @@ tar xvf rpm2tgz*.txz
 tar xvf rpm-*.txz
 tar xvf db*.txz
 RPM_LIBDIR=$CURR_DIR/zenity/usr/lib$SLACKARCH
-RPM_PRELOAD=$RPM_LIBDIR/librpm.so.1.0.0:$RPM_LIBDIR/librpmio.so.1.0.0:$RPM_LIBDIR/libdb-4.4.so
+RPM_PRELOAD=$RPM_LIBDIR/librpm.so.1.0.0:$RPM_LIBDIR/librpmio.so.1.0.0:$RPM_LIBDIR/libdb_cxx-4.4.so
 PATH=$CURR_DIR/zenity/usr/bin:$PATH LD_PRELOAD=$RPM_PRELOAD $CURR_DIR/zenity/usr/bin/rpm2targz $CURR_DIR/zenity/libnotify*.rpm
 PATH=$CURR_DIR/zenity/usr/bin:$PATH LD_PRELOAD=$RPM_PRELOAD $CURR_DIR/zenity/usr/bin/rpm2targz $CURR_DIR/zenity/zenity*.rpm
 tar xvf libnotify*.tar.gz
