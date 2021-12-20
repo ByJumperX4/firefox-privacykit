@@ -42,9 +42,14 @@ tar xvf zenity*.tar.gz
 
 # Step 3: install properly and remove unneeded stuff
 rm -v $CURR_DIR/zenity/*.rpm $CURR_DIR/zenity/*.txz $CURR_DIR/zenity/*.tar.gz
-cp -rv $CURR_DIR/zenity/libnotify*/* $CURR_DIR/zenity/
+if [ -d $CURR_DIR/zenity/libnotify* ]; then
+    cp -rv $CURR_DIR/zenity/libnotify*/* $CURR_DIR/zenity/
+    rm -rfv $CURR_DIR/zenity/libnotify*
+fi
+if [ -d $CURR_DIR/zenity/zenity* ]; then
 cp -rv $CURR_DIR/zenity/zenity*/* $CURR_DIR/zenity/
-rm -rfv $CURR_DIR/zenity/libnotify* $CURR_DIR/zenity/zenity*
+rm -rfv $CURR_DIR/zenity/zenity*
+fi
 
 # Step 4: create a script to use zenity
 echo "#!/bin/sh" > $CURR_DIR/runzenity
