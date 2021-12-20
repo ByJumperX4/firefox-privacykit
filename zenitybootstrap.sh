@@ -44,5 +44,5 @@ mv -v $CURR_DIR/zenity/zenity.ui /tmp/zenity/zenity/
 echo "#!/bin/sh" > $CURR_DIR/runzenity
 echo "cd $CURR_DIR/zenity" >>  $CURR_DIR/runzenity
 echo "PATH=$PATH:$CURR_DIR/zenity/usr/bin LD_PRELOAD=./usr/lib$SLACKARCH/libnotify.so.4.0.0:./usr/lib$SLACKARCH/libpng14.so.14.5.0 ./usr/bin/zenity" \"\$\@\" >>  $CURR_DIR/runzenity
-echo "exit \$\?" >> $CURR_DIR/runzenity
+echo "EXIT_CODE=\$\? exit $EXIT_CODE" >> $CURR_DIR/runzenity
 chmod +x $CURR_DIR/runzenity
