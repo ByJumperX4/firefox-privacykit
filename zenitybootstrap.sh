@@ -1,7 +1,7 @@
 #!/bin/sh -eu
 # --- Zenity bootstrap shell script ---
-# Downloads an old zenity version from the CentOS 6.10 repositories, converts it to tar.gz using rpm2targz from Slackware 13.37 and creates a script to make it usable
-# Warning: it will create the zenity bootstrap environment in the current directory. Leaving a script and a zenity folder here.
+# Downloads a patched zenity version from my github repository and installs dependencies from Slackware 13.37 and creates a script to make it usable
+# Warning: it will create the zenity bootstrap environment in the current directory. Leaving a script and a zenity folder there, if you delete the zenity folder, the script won't work anymore.
 
 # Step 0: set variables and remove any previous zenity environment
 CURR_DIR=$(pwd) # Save the current dir
@@ -13,6 +13,7 @@ elif [ "$(uname -m)" = "x86" ]; then
     SLACKARCH=""
     SLACKPKGARCH="i486"
     CENTOSARCH="i386"
+    # x86 is actually not supported anymore (will fix in future)
     echo "Architecture not supported (yet)! Please create an issue with the output of uname -m"
 else
     echo "Architecture not supported (yet)! Please create an issue with the output of uname -m"
