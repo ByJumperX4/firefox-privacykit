@@ -20,10 +20,12 @@ sh $FPK_DIR/zenitybootstrap.sh
 if ! $FPK_DIR/runzenity --question --width 480 --text "Welcome to the Firefox Privacy Kit installer ! \n
 This installer is going to set you up Firefox ESR with various protections depending on your choices.\n
 The installer will ask you a few questions to fit your needs.\n
-Press \"OK\" to begin..." ; then
+Press \"Yes\" to begin..."
+then
     echo "The user aborded the installation process !"
-    if [ -d $HOME/_firefox-privacykit ]; then
-    rm -rfv $HOME/_firefox-privacykit
+    if [ -d $HOME/_firefox-privacykit ]
+    then
+       rm -rfv $HOME/_firefox-privacykit
     fi
     echo "Closing..."
     exit 0
