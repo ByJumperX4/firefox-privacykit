@@ -16,8 +16,13 @@ elif [ "$(uname -m)" = "x86" ]; then
 else
     echo "Architecture not supported (yet)! Please create an issue with the output of uname -m"
 fi
-rm -rfv $CURR_DIR/zenity
+
+if [ -f $CURR_DIR/zenity ]; then
+    rm -rfv $CURR_DIR/zenity
+fi
+if [ -f $CURR_DIR/runzenity ]; then
 rm -v $CURR_DIR/runzenity
+fi
 
 # Step 1: create the zenity dir we will work in and download the 3 components we will use
 mkdir -v $CURR_DIR/zenity
