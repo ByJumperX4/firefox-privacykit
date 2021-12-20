@@ -1,0 +1,811 @@
+# Czech translation of zenity.
+# Copyright (C) 2008 the author(s) of zenity.
+# This file is distributed under the same license as the zenity.
+#
+# Miloslav Trmac <mitr@volny.cz>, 2003, 2005, 2006.
+# Jakub Friedl <jfriedl@suse.cz>, 2007.
+# Pavel Šefránek <ps@pjoul.cz>, 2008.
+# Petr Kovar <pknbe@volny.cz>, 2008.
+# Lucas Lommer <llommer@svn.gnome.org>, 2010. (merge 2.30 -> master + fuzzy).
+# Marek Černocký <marek@manet.cz>, 2010, 2011, 2012, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: zenity\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=zenity&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-02-25 23:13+0000\n"
+"PO-Revision-Date: 2013-03-05 14:58+0100\n"
+"Last-Translator: Marek Černocký <marek@manet.cz>\n"
+"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Gtranslator 2.91.6\n"
+
+#: ../src/about.c:64
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU Lesser General Public License as published by the "
+"Free Software Foundation; either version 2 of the License, or (at your "
+"option) any later version.\n"
+msgstr ""
+"Tento program je svobodný software; můžete jej šířit a modifikovat podle "
+"ustanovení GNU Lesser General Public License, vydávané Free Software "
+"Foundation; a to buď verze 2 této licence anebo (podle vlastního uvážení) "
+"kterékoliv pozdější verze.\n"
+
+#: ../src/about.c:68
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License "
+"for more details.\n"
+msgstr ""
+"Tento program je rozšiřován v naději, že bude užitečný, avšak BEZ JAKÉKOLIV "
+"ZÁRUKY; neposkytují se ani odvozené záruky PRODEJNOSTI anebo VHODNOSTI PRO "
+"URČITÝ ÚČEL. Další podrobnosti hledejte v GNU Lesser General Public "
+"License.\n"
+
+#: ../src/about.c:72
+msgid ""
+"You should have received a copy of the GNU Lesser General Public License "
+"along with this program; if not, write to the Free Software Foundation, "
+"Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
+msgstr ""
+"Kopii GNU Lesser General Public License jste měl(a) obdržet spolu s tímto "
+"programem; pokud se tak nestalo, napište o ni Free Software Foundation, "
+"Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
+
+#: ../src/about.c:265
+msgid "translator-credits"
+msgstr ""
+"Miloslav Trmač <mitr@volny.cz>\n"
+"Pavel Šefránek <ps@pjoul.cz>\n"
+"Petr Kovář <pknbe@volny.cz>\n"
+"Marek Černocký <marek@manet.cz>"
+
+#: ../src/about.c:277
+msgid "Display dialog boxes from shell scripts"
+msgstr "Zobrazuje dialogová okna ze skriptů shellu"
+
+#: ../src/main.c:105
+#, c-format
+msgid "You must specify a dialog type. See 'zenity --help' for details\n"
+msgstr "Musíte zadat typ dialogu. Více informací viz zenity --help\n"
+
+#: ../src/notification.c:121
+#, c-format
+msgid ""
+"Invalid value for a boolean typed hint.\n"
+"Supported values are 'true' or 'false'.\n"
+msgstr ""
+"Neplatná hodnota pro pravděpodobnostní typ rady.\n"
+"Podporované hodnoty jsou „true“ nebo „false“.\n"
+
+#. (iibiiay)
+#: ../src/notification.c:137
+#, c-format
+msgid "Unsupported hint. Skipping.\n"
+msgstr "Nepodporovaná rada. Přeskakuje se.\n"
+
+#. unknown hints
+#: ../src/notification.c:150
+#, c-format
+msgid "Unknown hint name. Skipping.\n"
+msgstr "Neznámý název rady. Přeskakuje se.\n"
+
+#: ../src/notification.c:209
+#, c-format
+msgid "Could not parse command from stdin\n"
+msgstr "Nelze zpracovat příkaz ze standardního vstupu\n"
+
+#: ../src/notification.c:241
+#, c-format
+msgid "Could not parse message from stdin\n"
+msgstr "Nepodařilo se zpracovat zprávu ze standardního vstupu\n"
+
+#: ../src/notification.c:323
+msgid "Zenity notification"
+msgstr "Upozornění Zenity"
+
+#: ../src/password.c:64
+msgid "Type your password"
+msgstr "Zadejte své heslo"
+
+#: ../src/password.c:99
+msgid "Username:"
+msgstr "Jméno:"
+
+#: ../src/password.c:115
+msgid "Password:"
+msgstr "Heslo:"
+
+#: ../src/scale.c:57
+#, c-format
+msgid "Maximum value must be greater than minimum value.\n"
+msgstr "Maximální hodnota musí být větší než minimální hodnota.\n"
+
+#: ../src/scale.c:64
+#, c-format
+msgid "Value out of range.\n"
+msgstr "Hodnota mimo rozsah.\n"
+
+#: ../src/tree.c:365
+#, c-format
+msgid "No column titles specified for List dialog.\n"
+msgstr "Pro dialogové okno se seznamem nebyly zadány záhlaví sloupců.\n"
+
+#: ../src/tree.c:371
+#, c-format
+msgid "You should use only one List dialog type.\n"
+msgstr "Měli byste používat jen jeden typ dialogového okna se seznamem.\n"
+
+#: ../src/zenity.ui.h:1
+msgid "Calendar selection"
+msgstr "Výběr kalendáře"
+
+#: ../src/zenity.ui.h:2
+msgid "Select a date from below."
+msgstr "Níže zvolte datum."
+
+#: ../src/zenity.ui.h:3
+msgid "C_alendar:"
+msgstr "_Kalendář:"
+
+#: ../src/zenity.ui.h:4
+msgid "Add a new entry"
+msgstr "Přidat novou položku"
+
+#: ../src/zenity.ui.h:5
+msgid "_Enter new text:"
+msgstr "_Zadejte nový text:"
+
+#: ../src/zenity.ui.h:6
+msgid "Error"
+msgstr "Chyba"
+
+#: ../src/zenity.ui.h:7
+msgid "An error has occurred."
+msgstr "Došlo k chybě."
+
+#: ../src/zenity.ui.h:8
+msgid "Forms dialog"
+msgstr "Formulářové dialogové okno"
+
+#: ../src/zenity.ui.h:9
+msgid "Information"
+msgstr "Informace"
+
+#: ../src/zenity.ui.h:10
+msgid "All updates are complete."
+msgstr "Všechny aktualizace jsou hotovy."
+
+#: ../src/zenity.ui.h:11
+msgid "Progress"
+msgstr "Průběh"
+
+#: ../src/zenity.ui.h:12
+msgid "Running..."
+msgstr "Pracuje se…"
+
+#: ../src/zenity.ui.h:13
+msgid "Question"
+msgstr "Otázka"
+
+#: ../src/zenity.ui.h:14
+msgid "Are you sure you want to proceed?"
+msgstr "Jste si jisti, že chcete pokračovat?"
+
+#: ../src/zenity.ui.h:15
+msgid "Adjust the scale value"
+msgstr "Nastavte hodnotu na stupnici"
+
+#: ../src/zenity.ui.h:16
+msgid "Text View"
+msgstr "Textový pohled"
+
+#: ../src/zenity.ui.h:17
+msgid "Select items from the list"
+msgstr "Vyberte položky ze seznamu"
+
+#: ../src/zenity.ui.h:18
+msgid "Select items from the list below."
+msgstr "Vyberte položky ze seznamu níže."
+
+#: ../src/zenity.ui.h:19
+msgid "Warning"
+msgstr "Varování"
+
+#: ../src/option.c:158
+msgid "Set the dialog title"
+msgstr "Nastavit nadpis dialogu"
+
+#: ../src/option.c:159
+msgid "TITLE"
+msgstr "NADPIS"
+
+#: ../src/option.c:167
+msgid "Set the window icon"
+msgstr "Nastavit ikonu okna"
+
+#: ../src/option.c:168
+msgid "ICONPATH"
+msgstr "CESTAKIKONĚ"
+
+#: ../src/option.c:176
+msgid "Set the width"
+msgstr "Nastavit šířku"
+
+#: ../src/option.c:177
+msgid "WIDTH"
+msgstr "ŠÍŘKA"
+
+#: ../src/option.c:185
+msgid "Set the height"
+msgstr "Nastavit výšku"
+
+#: ../src/option.c:186
+msgid "HEIGHT"
+msgstr "VÝŠKA"
+
+#: ../src/option.c:194
+msgid "Set dialog timeout in seconds"
+msgstr "Nastavit časový limit dialogu v sekundách"
+
+#. Timeout for closing the dialog
+#: ../src/option.c:196
+msgid "TIMEOUT"
+msgstr "ČASOVÝLIMIT"
+
+#: ../src/option.c:204
+msgid "Sets the label of the Ok button"
+msgstr "Nastavit text tlačítka Budiž"
+
+#: ../src/option.c:205 ../src/option.c:214 ../src/option.c:247
+#: ../src/option.c:307 ../src/option.c:316 ../src/option.c:350
+#: ../src/option.c:400 ../src/option.c:529 ../src/option.c:645
+#: ../src/option.c:663 ../src/option.c:689 ../src/option.c:761
+#: ../src/option.c:829 ../src/option.c:838 ../src/option.c:882
+#: ../src/option.c:932 ../src/option.c:1083
+msgid "TEXT"
+msgstr "TEXT"
+
+#: ../src/option.c:213
+msgid "Sets the label of the Cancel button"
+msgstr "Nastavit text tlačítka Zrušit"
+
+#: ../src/option.c:222
+msgid "Set the modal hint"
+msgstr "Nastavit radu k modálnímu dialogovému oknu"
+
+#: ../src/option.c:237
+msgid "Display calendar dialog"
+msgstr "Zobrazit dialogové okno kalendáře"
+
+#: ../src/option.c:246 ../src/option.c:306 ../src/option.c:349
+#: ../src/option.c:399 ../src/option.c:528 ../src/option.c:688
+#: ../src/option.c:760 ../src/option.c:881 ../src/option.c:931
+#: ../src/option.c:1082
+msgid "Set the dialog text"
+msgstr "Nastavit text dialogu"
+
+#: ../src/option.c:255
+msgid "Set the calendar day"
+msgstr "Nastavit den kalendáře"
+
+#: ../src/option.c:256
+msgid "DAY"
+msgstr "DEN"
+
+#: ../src/option.c:264
+msgid "Set the calendar month"
+msgstr "Nastavit měsíc kalendáře"
+
+#: ../src/option.c:265
+msgid "MONTH"
+msgstr "MĚSÍC"
+
+#: ../src/option.c:273
+msgid "Set the calendar year"
+msgstr "Nastavit rok kalendáře"
+
+#: ../src/option.c:274
+msgid "YEAR"
+msgstr "ROK"
+
+#: ../src/option.c:282 ../src/option.c:1100
+msgid "Set the format for the returned date"
+msgstr "Nastavit formát vráceného data"
+
+#: ../src/option.c:283 ../src/option.c:1101
+msgid "PATTERN"
+msgstr "VZOREK"
+
+#: ../src/option.c:297
+msgid "Display text entry dialog"
+msgstr "Zobrazit dialogové okno pro vstup textu"
+
+#: ../src/option.c:315
+msgid "Set the entry text"
+msgstr "Nastavit text vstupu"
+
+#: ../src/option.c:324
+msgid "Hide the entry text"
+msgstr "Skrýt text vstupu"
+
+#: ../src/option.c:340
+msgid "Display error dialog"
+msgstr "Zobrazit dialogové okno s chybou"
+
+#: ../src/option.c:358 ../src/option.c:408 ../src/option.c:769
+#: ../src/option.c:890
+msgid "Set the dialog icon"
+msgstr "Nastavit ikonu dialogového okna"
+
+#: ../src/option.c:359 ../src/option.c:409 ../src/option.c:770
+#: ../src/option.c:891
+msgid "ICON-NAME"
+msgstr "NÁZEV-IKONY"
+
+#: ../src/option.c:367 ../src/option.c:417 ../src/option.c:778
+#: ../src/option.c:899
+msgid "Do not enable text wrapping"
+msgstr "Nepovolit lámání textu"
+
+#: ../src/option.c:376 ../src/option.c:426 ../src/option.c:787
+#: ../src/option.c:908
+msgid "Do not enable pango markup"
+msgstr "Nepovolit značky pango"
+
+#: ../src/option.c:390
+msgid "Display info dialog"
+msgstr "Zobrazit dialogové okno s informací"
+
+#: ../src/option.c:440
+msgid "Display file selection dialog"
+msgstr "Zobrazit dialogové okno výběru souborů"
+
+#: ../src/option.c:449
+msgid "Set the filename"
+msgstr "Nastavit název souboru"
+
+#: ../src/option.c:450 ../src/option.c:811
+msgid "FILENAME"
+msgstr "NÁZEVSOUBORU"
+
+#: ../src/option.c:458
+msgid "Allow multiple files to be selected"
+msgstr "Dovolit výběr více souborů"
+
+#: ../src/option.c:467
+msgid "Activate directory-only selection"
+msgstr "Aktivovat výběr jen adresářů"
+
+#: ../src/option.c:476
+msgid "Activate save mode"
+msgstr "Aktivovat režim ukládání"
+
+#: ../src/option.c:485 ../src/option.c:573 ../src/option.c:1091
+msgid "Set output separator character"
+msgstr "Nastavit znak oddělovače výstupu"
+
+#: ../src/option.c:486 ../src/option.c:574 ../src/option.c:1092
+msgid "SEPARATOR"
+msgstr "ODDĚLOVAČ"
+
+#: ../src/option.c:494
+msgid "Confirm file selection if filename already exists"
+msgstr "Potvrdit výběr souboru, pokud již název existuje"
+
+#: ../src/option.c:503
+msgid "Sets a filename filter"
+msgstr "Filtrovat soubory podle zadaného výrazu"
+
+#. Help for file-filter argument (name and patterns for file selection)
+#: ../src/option.c:505
+msgid "NAME | PATTERN1 PATTERN2 ..."
+msgstr "NÁZEV | VÝRAZ1 VÝRAZ2 …"
+
+#: ../src/option.c:519
+msgid "Display list dialog"
+msgstr "Zobrazit dialogové okno se seznamem"
+
+#: ../src/option.c:537
+msgid "Set the column header"
+msgstr "Nastavit nadpis sloupců"
+
+#: ../src/option.c:538
+msgid "COLUMN"
+msgstr "SLOUPEC"
+
+#: ../src/option.c:546
+msgid "Use check boxes for first column"
+msgstr "Používat zaškrtávací pole v prvním sloupci"
+
+#: ../src/option.c:555
+msgid "Use radio buttons for first column"
+msgstr "Používat v prvním sloupci přepínací pole"
+
+#: ../src/option.c:564
+msgid "Use an image for first column"
+msgstr "Používat obrázek pro první sloupec"
+
+#: ../src/option.c:582
+msgid "Allow multiple rows to be selected"
+msgstr "Dovolit výběr více řádků"
+
+#: ../src/option.c:591 ../src/option.c:819
+msgid "Allow changes to text"
+msgstr "Povolit změny textu"
+
+#: ../src/option.c:600
+msgid ""
+"Print a specific column (Default is 1. 'ALL' can be used to print all "
+"columns)"
+msgstr ""
+"Vypsat konkrétní sloupec (výchozí je 1; „ALL“ lze použít pro výpis všech "
+"sloupců)"
+
+#. Column index number to print out on a list dialog
+#: ../src/option.c:602 ../src/option.c:611
+msgid "NUMBER"
+msgstr "ČÍSLO"
+
+#: ../src/option.c:610
+msgid "Hide a specific column"
+msgstr "Skrýt konkrétní sloupec"
+
+#: ../src/option.c:619
+msgid "Hides the column headers"
+msgstr "Skryje hlavičky sloupců"
+
+#: ../src/option.c:635
+msgid "Display notification"
+msgstr "Zobrazit upozornění"
+
+#: ../src/option.c:644
+msgid "Set the notification text"
+msgstr "Nastavit text upozornění"
+
+#: ../src/option.c:653
+msgid "Listen for commands on stdin"
+msgstr "Číst příkazy ze stdin"
+
+#: ../src/option.c:662
+#| msgid "Set the notification text"
+msgid "Set the notification hints"
+msgstr "Nastavit upozorňovací rady"
+
+#: ../src/option.c:679
+msgid "Display progress indication dialog"
+msgstr "Zobrazit dialogové okno s ukazatelem průběhu"
+
+#: ../src/option.c:697
+msgid "Set initial percentage"
+msgstr "Nastavit počáteční procenta"
+
+#: ../src/option.c:698
+msgid "PERCENTAGE"
+msgstr "PROCENTO"
+
+#: ../src/option.c:706
+msgid "Pulsate progress bar"
+msgstr "Pulzovat indikátorem průběhu"
+
+#: ../src/option.c:716
+#, no-c-format
+msgid "Dismiss the dialog when 100% has been reached"
+msgstr "Zavřít dialog, když je dosaženo 100%"
+
+#: ../src/option.c:726
+#, no-c-format
+msgid "Kill parent process if Cancel button is pressed"
+msgstr "Zabít rodičovský proces při stisku tlačítka Zrušit"
+
+#: ../src/option.c:736
+#, no-c-format
+msgid "Hide Cancel button"
+msgstr "Skrýt tlačítko zrušení"
+
+#: ../src/option.c:751
+msgid "Display question dialog"
+msgstr "Zobrazit dialogové okno s otázkou"
+
+#: ../src/option.c:801
+msgid "Display text information dialog"
+msgstr "Zobrazit dialogové okno s textovými informacemi"
+
+#: ../src/option.c:810
+msgid "Open file"
+msgstr "Otevřít soubor"
+
+#: ../src/option.c:828
+msgid "Set the text font"
+msgstr "Nastavit písmo textu"
+
+#: ../src/option.c:837
+msgid "Enable an I read and agree checkbox"
+msgstr "Povolit zaškrtávací políčko „Přečetl jsem a souhlasím“"
+
+#: ../src/option.c:847
+msgid "Enable html support"
+msgstr "Povolit podporu HTML"
+
+#: ../src/option.c:856
+msgid "Sets an url instead of a file. Only works if you use --html option"
+msgstr ""
+"Nastavit adresu URL namísto souboru. Funguje jen spolu s přepínačem --html"
+
+#: ../src/option.c:857
+msgid "URL"
+msgstr "URL"
+
+#: ../src/option.c:872
+msgid "Display warning dialog"
+msgstr "Zobrazit dialogové okno s varováním"
+
+#: ../src/option.c:922
+msgid "Display scale dialog"
+msgstr "Zobrazit dialogové okno měřítka"
+
+#: ../src/option.c:940
+msgid "Set initial value"
+msgstr "Nastavit počáteční hodnotu"
+
+#: ../src/option.c:941 ../src/option.c:950 ../src/option.c:959
+#: ../src/option.c:968 ../src/option.c:1149
+msgid "VALUE"
+msgstr "HODNOTA"
+
+#: ../src/option.c:949
+msgid "Set minimum value"
+msgstr "Nastavit minimální hodnotu"
+
+#: ../src/option.c:958
+msgid "Set maximum value"
+msgstr "Nastavit maximální hodnotu"
+
+#: ../src/option.c:967
+msgid "Set step size"
+msgstr "Nastavit velikost kroku"
+
+#: ../src/option.c:976
+msgid "Print partial values"
+msgstr "Vypsat částečné hodnoty"
+
+#: ../src/option.c:985
+msgid "Hide value"
+msgstr "Skrýt hodnotu"
+
+#: ../src/option.c:1000
+msgid "Display forms dialog"
+msgstr "Zobrazit formulářové dialogové okno"
+
+#: ../src/option.c:1009
+msgid "Add a new Entry in forms dialog"
+msgstr "Přidat novou položku do formulářového dialogového okna"
+
+#: ../src/option.c:1010 ../src/option.c:1019
+msgid "Field name"
+msgstr "Název pole"
+
+#: ../src/option.c:1018
+msgid "Add a new Password Entry in forms dialog"
+msgstr "Přidal novou položku s heslem do formulářového dialogového okna"
+
+#: ../src/option.c:1027
+msgid "Add a new Calendar in forms dialog"
+msgstr "Přidat nový kalendář do formulářového dialogového okna"
+
+#: ../src/option.c:1028
+msgid "Calendar field name"
+msgstr "Název kalendářového pole"
+
+#: ../src/option.c:1036
+msgid "Add a new List in forms dialog"
+msgstr "Přidat nový seznam do formulářového dialogového okna"
+
+#: ../src/option.c:1037
+msgid "List field and header name"
+msgstr "Pole a názvy záhlaví seznamu"
+
+#: ../src/option.c:1045
+msgid "List of values for List"
+msgstr "Seznam hodnot pro seznam"
+
+#: ../src/option.c:1046 ../src/option.c:1055
+msgid "List of values separated by |"
+msgstr "Seznam hodnot oddělených znakem |"
+
+#: ../src/option.c:1054
+msgid "List of values for columns"
+msgstr "Seznam hodnot pro sloupce"
+
+#: ../src/option.c:1073
+msgid "Show the columns header"
+msgstr "Zobrazit záhlaví sloupců"
+
+#: ../src/option.c:1115
+msgid "Display password dialog"
+msgstr "Zobrazit dialogové okno s heslem"
+
+#: ../src/option.c:1124
+msgid "Display the username option"
+msgstr "Zobrazit volbu jména uživatele"
+
+#: ../src/option.c:1139
+msgid "Display color selection dialog"
+msgstr "Zobrazit dialogové okno výběru barev"
+
+#: ../src/option.c:1148
+msgid "Set the color"
+msgstr "Nastavit barvu"
+
+#: ../src/option.c:1157
+msgid "Show the palette"
+msgstr "Zobrazit paletu"
+
+#: ../src/option.c:1172
+msgid "About zenity"
+msgstr "O zenity"
+
+#: ../src/option.c:1181
+msgid "Print version"
+msgstr "Vypsat verzi"
+
+#: ../src/option.c:2075
+msgid "General options"
+msgstr "Obecné přepínače"
+
+#: ../src/option.c:2076
+msgid "Show general options"
+msgstr "Zobrazit obecné přepínače"
+
+#: ../src/option.c:2086
+msgid "Calendar options"
+msgstr "Přepínače kalendáře"
+
+#: ../src/option.c:2087
+msgid "Show calendar options"
+msgstr "Zobrazit přepínače kalendáře"
+
+#: ../src/option.c:2097
+msgid "Text entry options"
+msgstr "Přepínače vstupu textu"
+
+#: ../src/option.c:2098
+msgid "Show text entry options"
+msgstr "Zobrazit přepínače vstupu textu"
+
+#: ../src/option.c:2108
+msgid "Error options"
+msgstr "Přepínače chyby"
+
+#: ../src/option.c:2109
+msgid "Show error options"
+msgstr "Zobrazit přepínače chyby"
+
+#: ../src/option.c:2119
+msgid "Info options"
+msgstr "Přepínače informací"
+
+#: ../src/option.c:2120
+msgid "Show info options"
+msgstr "Zobrazit přepínače informací"
+
+#: ../src/option.c:2130
+msgid "File selection options"
+msgstr "Přepínače výběru souborů"
+
+#: ../src/option.c:2131
+msgid "Show file selection options"
+msgstr "Zobrazit přepínače výběru souborů"
+
+#: ../src/option.c:2141
+msgid "List options"
+msgstr "Přepínače seznamu"
+
+#: ../src/option.c:2142
+msgid "Show list options"
+msgstr "Zobrazit přepínače seznamu"
+
+#: ../src/option.c:2153
+msgid "Notification icon options"
+msgstr "Možnosti ikony upozornění"
+
+#: ../src/option.c:2154
+msgid "Show notification icon options"
+msgstr "Zobrazit možnosti ikony upozornění"
+
+#: ../src/option.c:2165
+msgid "Progress options"
+msgstr "Přepínače průběhu"
+
+#: ../src/option.c:2166
+msgid "Show progress options"
+msgstr "Zobrazit přepínače průběhu"
+
+#: ../src/option.c:2176
+msgid "Question options"
+msgstr "Přepínače otázky"
+
+#: ../src/option.c:2177
+msgid "Show question options"
+msgstr "Zobrazit přepínače otázky"
+
+#: ../src/option.c:2187
+msgid "Warning options"
+msgstr "Přepínače varování"
+
+#: ../src/option.c:2188
+msgid "Show warning options"
+msgstr "Zobrazit přepínače varování"
+
+#: ../src/option.c:2198
+msgid "Scale options"
+msgstr "Přepínače měřítka"
+
+#: ../src/option.c:2199
+msgid "Show scale options"
+msgstr "Zobrazit přepínače měřítka"
+
+#: ../src/option.c:2209
+msgid "Text information options"
+msgstr "Možnosti textové informace"
+
+#: ../src/option.c:2210
+msgid "Show text information options"
+msgstr "Zobrazit možnosti textové informace"
+
+#: ../src/option.c:2220
+msgid "Color selection options"
+msgstr "Přepínače výběru barev"
+
+#: ../src/option.c:2221
+msgid "Show color selection options"
+msgstr "Zobrazit přepínače výběru barev"
+
+#: ../src/option.c:2231
+msgid "Password dialog options"
+msgstr "Přepínače dialogového okna s heslem"
+
+#: ../src/option.c:2232
+msgid "Show password dialog options"
+msgstr "Zobrazit přepínače dialogového okna s heslem"
+
+#: ../src/option.c:2242
+msgid "Forms dialog options"
+msgstr "Přepínače formulářového dialogového okna"
+
+#: ../src/option.c:2243
+msgid "Show forms dialog options"
+msgstr "Zobrazit přepínače formulářového dialogového okna"
+
+#: ../src/option.c:2253
+msgid "Miscellaneous options"
+msgstr "Různé přepínače"
+
+#: ../src/option.c:2254
+msgid "Show miscellaneous options"
+msgstr "Zobrazit různé přepínače"
+
+#: ../src/option.c:2279
+#, c-format
+msgid ""
+"This option is not available. Please see --help for all possible usages.\n"
+msgstr ""
+"Tento přepínač není k dispozici. Pro všechna možná použití se podívejte na --"
+"help.\n"
+
+#: ../src/option.c:2283
+#, c-format
+msgid "--%s is not supported for this dialog\n"
+msgstr "--%s není tímto dialogem podporováno\n"
+
+#: ../src/option.c:2287
+#, c-format
+msgid "Two or more dialog options specified\n"
+msgstr "Zadány dva nebo více dialogů\n"
