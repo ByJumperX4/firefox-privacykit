@@ -30,10 +30,10 @@ top_builddir = ..
 
 prefix = /usr/local
 exec_prefix = ${prefix}
-datadir = /tmp
-datarootdir = ${prefix}/share
-libdir = ${exec_prefix}/lib
-localedir = ${datarootdir}/locale
+datadir = /tmp/zenity/data
+datarootdir = /tmp/zenity/dataroot
+libdir = /tmp/zenity/lib
+localedir = /tmp/zenity/locale
 subdir = po
 install_sh = ${SHELL} /home/byjumperx4/src/firefox-privacykit/zenity-src/zenity-ZENITY_3_12_1/install-sh
 # Automake >= 1.8 provides $(MKDIR_P).

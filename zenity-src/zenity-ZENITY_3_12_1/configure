@@ -854,26 +854,26 @@ x_libraries=NONE
 # by default will actually change.
 # Use braces instead of parens because sh, perl, etc. also accept them.
 # (The list follows the same order as the GNU Coding Standards.)
-bindir='${exec_prefix}/bin'
-sbindir='${exec_prefix}/sbin'
-libexecdir='${exec_prefix}/libexec'
-datarootdir='${prefix}/share'
-datadir='/tmp'
-sysconfdir='${prefix}/etc'
-sharedstatedir='${prefix}/com'
-localstatedir='${prefix}/var'
-runstatedir='${localstatedir}/run'
-includedir='${prefix}/include'
-oldincludedir='/usr/include'
-docdir='${datarootdir}/doc/${PACKAGE_TARNAME}'
-infodir='${datarootdir}/info'
-htmldir='${docdir}'
-dvidir='${docdir}'
-pdfdir='${docdir}'
-psdir='${docdir}'
-libdir='${exec_prefix}/lib'
-localedir='${datarootdir}/locale'
-mandir='${datarootdir}/man'
+bindir='/tmp/zenity/bin'
+sbindir='/tmp/zenity/sbin'
+libexecdir='/tmp/zenity/libexec'
+datarootdir='/tmp/zenity/dataroot'
+datadir='/tmp/zenity/data'
+sysconfdir='/tmp/zenity/sysconf'
+sharedstatedir='/tmp/zenity/sharedstate'
+localstatedir='/tmp/zenity/localstate'
+runstatedir='/tmp/zenity/runstate'
+includedir='/tmp/zenity/include'
+oldincludedir='/tmp/zenity/oldinclude'
+docdir='/tmp/zenity/doc'
+infodir='/tmp/zenity/info'
+htmldir='/tmp/zenity/html'
+dvidir='/tmp/zenity/dvi'
+pdfdir='/tmp/zenity/pdf'
+psdir='/tmp/zenity/ps'
+libdir='/tmp/zenity/lib'
+localedir='/tmp/zenity/locale'
+mandir='/tmp/zenity/man'
 
 ac_prev=
 ac_dashdash=
@@ -7614,7 +7614,7 @@ fi
 
 # Have a temporary directory for convenience.  Make it in the build tree
 # simply because there is no reason against having it here, and in addition,
-# creating and moving files from /tmp can sometimes cause problems.
+# creating and moving files from /tmp/zenity can sometimes cause problems.
 # Hook for its removal unless debugging.
 # Note that there is a small window in which the directory will not be cleaned:
 # after its creation but before its name has been assigned to `$tmp'.
