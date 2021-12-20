@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -eu
 # --- Zenity bootstrap shell script ---
 # Downloads an old zenity version from the CentOS 6.10 repositories, converts it to tar.gz using rpm2targz from Slackware 13.37 and creates a script to make it usable
 # Warning: it will create the zenity bootstrap environment in the current directory. Leaving a script and a zenity folder here.
