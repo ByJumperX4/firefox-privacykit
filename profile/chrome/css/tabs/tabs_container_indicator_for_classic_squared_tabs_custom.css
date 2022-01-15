@@ -1,0 +1,22 @@
+/* Firefox userChrome.css tweaks ****************************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ********************************************/
+/************************************************************************************************/
+
+
+.tabbrowser-tab .tab-context-line {
+  height: 2px !important;
+  border-radius: 5px !important;
+}
+
+.tabbrowser-tab[selected]:not([usercontextid]) .tab-context-line {
+  background-color: Highlight !important;
+}
+
+#main-window:not([lwtheme-image="true"]):not([lwtheme-mozlightdark]):-moz-lwtheme .tabbrowser-tab[selected]:not([usercontextid]) .tab-context-line {
+  background-color: var(--tab-line-color,Highlight) !important;
+}
+
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
+  margin: unset !important;
+  background-color: var(--identity-icon-color) !important;
+}
